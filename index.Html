@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffe4e1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px;
+            color: #ff69b4;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 15px;
+            border: 5px solid #ff69b4;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            background-color: #fff0f5;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #ff69b4;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cute Photo Gallery</h1>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="photo1.jpg" alt="Photo 1">
+    </div>
+    <div class="gallery-item">
+        <img src="photo2.jpg" alt="Photo 2">
+    </div>
+    <div class="gallery-item">
+        <img src="photo3.jpg" alt="Photo 3">
+    </div>
+    <div class="gallery-item">
+        <img src="photo4.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="photo5.jpg" alt="Photo 5">
+    </div>
+    <!-- Add more photos as needed -->
+</div>
+
+</body>
+</html>
